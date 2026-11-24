@@ -1,0 +1,31 @@
+{
+  "name": "qrius-capstone-arpanabhattarai",
+  "version": "1.0.0",
+  "description": "Qrius Capstone - Playwright test suite for Dai Hire Me",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:report": "npx playwright show-report test-results/html-report",
+    "test:ui-only": "npx playwright test tests/ui",
+    "test:api-only": "npx playwright test tests/api",
+    "test:db-only": "npx playwright test tests/db",
+    "test:security-only": "npx playwright test tests/security",
+    "test:a11y-only": "npx playwright test tests/accessibility"
+  },
+  "keywords": ["qrius", "capstone", "playwright", "qa", "automation"],
+  "author": "Arpana Bhattarai",
+  "license": "MIT",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.8.0",
+    "@playwright/test": "^1.46.0",
+    "@types/node": "^20.11.0",
+    "@types/pg": "^8.11.0",
+    "dotenv": "^16.3.1",
+    "pg": "^8.11.3",
+    "typescript": "^5.4.0"
+  }
+}
